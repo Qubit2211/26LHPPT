@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Microsoft Office Presentation</title>
+    <title>Mimic Design</title>
     <style>
-        body, html {
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
+            background-color: #fff;
         }
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .button-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
-        .responsive-iframe iframe {
-            width: 100%;
-            height: 100%;
+        .button {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
             border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <div class="responsive-iframe">
-        <iframe src="https://elecroomin-my.sharepoint.com/:p:/g/personal/srinivas_elecroom_in/EaHSApEZ_CdDqXwgin9BDhkBB0kYiRQNJsoQ__fTsLKHzA?e=RepIvo&action=embedview">
-            This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
-        </iframe>
+    <div class="button-container">
+        <a href="./chandeliers.html" class="button">Chandeliers</a>
+        <a href="./highroof_lights.html" class="button">HighRoof</a>
+        <a href="./wall_light.html" class="button">Wall-Light</a>
+        <a href="./hanging_lights.html" class="button">Hanging-Light</a>
     </div>
 </body>
 </html>
